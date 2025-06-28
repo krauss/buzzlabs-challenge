@@ -34,10 +34,8 @@
                         ]
                         [:div
                             [:input {:type "button" :value "-" :on-click #(swap! click-count dec) :style {:font-size "18px" :font-weight "bold"}}]
-                            [:input {:type "button" :value "+" :on-click #(swap! click-count inc) :style {:font-size "18px" :font-weight "bold"}}]
-                        ]
-                        [:div {:style {:display "flex" :align-items "center"}}
                             [:input {:type "button" :value "Reset" :on-click #(reset! click-count 0) :style {:font-size "16px" :font-weight "bold"}}]
+                            [:input {:type "button" :value "+" :on-click #(swap! click-count inc) :style {:font-size "18px" :font-weight "bold"}}]
                         ]
                     ]
                 ]
